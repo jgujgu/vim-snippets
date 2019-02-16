@@ -1,59 +1,55 @@
-# Some useful Unicode entities
-# ============================
-# Non-Breaking Space
-snippet nbs
-	&nbsp;
-# ←
-snippet left
-	&#x2190;
-# →
-snippet right
-	&#x2192;
-# ↑
-snippet up
-	&#x2191;
-# ↓
-snippet down
-	&#x2193;
-# ↩
-snippet return
-	&#x21A9;
-# ⇤
-snippet backtab
-	&#x21E4;
-# ⇥
-snippet tab
-	&#x21E5;
-# ⇧
-snippet shift
-	&#x21E7;
-# ⌃
-snippet ctrl
-	&#x2303;
-# ⌅
-snippet enter
-	&#x2305;
-# ⌘
-snippet cmd
-	&#x2318;
-# ⌥
-snippet option
-	&#x2325;
-# ⌦
-snippet delete
-	&#x2326;
-# ⌫
-snippet backspace
-	&#x232B;
-# ⎋
-snippet esc
-	&#x238B;
+snippet e
+	- ${1:method} ${2:action}
+		$3
 
-# Forms
-# =====
-snippet fieldset
-	fieldset
-		legend ${1}
+snippet if
+	- ${1:condition}
+		${2:action}
+
+snippet un
+	-! ${1:condition}
+		${2:action}
+
+snippet ife
+	- if ${1:condition}
+		${2:action}
+	- else ${3:condition_2}
+		${4:action_2}
+
+snippet ifee
+	- if ${1:condition}
+		${2:action}
+	- elsif ${3:condition_2}
+		${4:action_2}
+	- else ${5:condition_3}
+		${6:action_3}
+
+snippet ead
+	- ${1:items}.each do |${2:item}|
+		${3:$2}
+
+snippet =
+	${1:name} = ${2:equation}
+
+snippet tag
+	${1:tag}.${2:class} = ${3:variable}.${4:attribute}
+
+snippet p
+	p ${1:text}
+
+snippet pb
+	p
+		| ${1:text}
+			${2:text_2}
+
+snippet div
+	div
+		$1
+
+snippet div.
+	.${1:class}
+		= ${2:content}
+
 
 # Assets
 # ======
