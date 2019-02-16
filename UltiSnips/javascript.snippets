@@ -52,6 +52,12 @@ function ${1:function_name}(${2:argument}) {
 }
 endsnippet
 
+snippet fu "anonymous function"
+function(${1:argument}) {
+	return $0
+}
+endsnippet
+
 snippet vf "Function assigned to var"
 ${1:var }${2:function_name} = function $2(${3}) {
 	${VISUAL}$0
@@ -160,6 +166,18 @@ endsnippet
 
 snippet req "require an AMD module"
 require([${1:'dependencies'}], ${2:callback});
+endsnippet
+
+snippet re "document ready"
+$(document).ready(function() {
+    $0
+});
+endsnippet
+
+snippet j  "jQuery"
+$('${1:selector}').${2:method}(function($0) {
+    return $1
+});
 endsnippet
 
 # vim:ft=snippets:

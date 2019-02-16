@@ -16,6 +16,12 @@ def ${1:function_name}${2:(${3:*args})}
 end
 endsnippet
 
+snippet d "def short"
+def ${1:method_name}
+	$0
+end
+endsnippet
+
 snippet defi "def initialize ..."
 def initialize${1:(${2:*args})}
 	$0
@@ -360,6 +366,10 @@ snippet ###
 =begin
 	$0
 =end
+endsnippet
+
+snippet ex "expectation"
+expect(${1:object}).${2:to} ${3:method}(${4:expectation})
 endsnippet
 
 # vim: set ts=2 sw=2 expandtab:
