@@ -188,4 +188,19 @@ snippet = "equation"
 ${1:variable} = ${2:expression};
 endsnippet
 
+# if
+snippet if "if"
+if (${1:true}) {
+	${0}
+}
+endsnippet
+
+snippet ife "if else"
+if (${1:true}) {
+	${2}
+} else {
+	${0}
+}
+endsnippet
+
 # vim:ft=snippets:
